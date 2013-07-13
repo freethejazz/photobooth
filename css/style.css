@@ -1,0 +1,49 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/*
+ * Style them curtains
+ */
+
+.curtains {
+  position: absolute;
+}
+
+#top-curtain {
+  height: 100px;
+  background: rgb(197, 4, 4);
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-bottom: 3px solid rgb(167, 0, 0);
+  z-index: 2;
+}
+
+#left-curtain, #right-curtain {
+  width: 50%;
+  height: 100%;
+  background: red;
+  transition: 1s all;
+}
+
+#left-curtain {
+  left: 0;
+  top: 0;
+  border-right: 5px solid black;
+}
+
+#right-curtain {
+  left: 50%;
+  top: 0;
+  border-left: 5px solid black;
+}
+
+.opened #left-curtain {
+    left: -45%;
+}
+
+.opened #right-curtain {
+  left: 95%;
+}
