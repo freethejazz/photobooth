@@ -46,6 +46,14 @@ html, body, #main {
     left: -45%;
 }
 
+/*
+ * Style the video element
+ */
+
+#photobooth-video {
+  height: 100%;
+}
+
 .opened #right-curtain {
   left: 95%;
 }
